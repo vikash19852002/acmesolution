@@ -1,13 +1,13 @@
 # AcmeSolution 
 
-##Read Me First
+## Read Me First
 The following was discovered as part of building this project:
 
 - Build with Java 17, Spring Boot, JPA, H2 DB
 - Build pom.xml to download all necessary libraries and packages.
 - All test case would be run when you perform "mvn clean install"
 
-##Coverage
+## Coverage
 - It covers get balance of an Account and Transfer balance actions from one account to another.
 - It contains basic validation to get Balance and Transfer Balance.
 - Concurrent transactions with same account are handled with help of Optimistic Locking concept (Version field in DB)
@@ -15,13 +15,13 @@ The following was discovered as part of building this project:
 - H2 DB is used to persist the Database on the Disk, so when the application is restarted, it reads old values.
 - It covers the basic functionalities and can be enhanced in the future.
 
-##API Methods
+## API Methods
 
-###Get Balance method
+### Get Balance method
 - URL: http://localhost:8080/acme/api/getBalance/88888888
 - Method: GET
 
-###Transfer Balance method
+### Transfer Balance method
 - URL: http://localhost:8080/acme/api/transfer
 - Method: POST
 - Body: {"fromAccount" : "88888888", "toAccount" : "12345678", "amount": 10, "currency" : "HKD"}
